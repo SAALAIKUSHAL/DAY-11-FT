@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Table Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .container {
+      padding: 20px;
+      background-color: #d87676;
+	    line-height: 20%;
+      width: 80%;
+      border-radius: 16px;
+    }
+    
+
+    form {
+      margin-bottom: 10px;
+	  border-radius: 16px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #fa0202;
+    }
+
+    button {
+      margin: 10x 0px 0px 25px;
+      border-radius: 16px;
+      margin-left: 95px;
+      padding: 10px;
+      color: rgb(189, 139, 139);
+      background-color: rgb(6, 38, 97);
+      box-shadow: #645959box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);;
+    }
+	.state{
+		margin: 20px 5px 5px 50px;
+	}
+	.fn{
+		margin: 10px 5px 5px 10px;
+	}
+	.ln{
+		margin: 10px 5px 5px 10px;
+	}
+	.gn{
+		margin: 10px 5px 5px 35px;
+	}
+	.pn{
+		margin: 10px 5px 5px 30px;
+	}
+	.add{
+		margin: 10px 5px 5px 30px;
+	}
+	.cn{
+		margin: 10px 5px 5px 30px;
+	}
+	.fd{
+		margin: 10px 10px 10px 50px;
+	}
+
+  th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #645959;
+  border: 1px solid #000;
+  font-weight: bold;
+  color: rgb(6, 7, 6);
+  background-color: rgb(235, 56, 12);
+}
+
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <h2>Form Table </h2>
+
+    <form id="myForm">
+      <label for="firstName">First Name:</label>
+      <input type="text"class="fn" id="firstName" name="firstName"><br>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text"class="ln" id="lastName" name="lastName"><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender"class="gn" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+
+      <label for="pincode">Pincode:</label>
+      <input type="text"class="pn" id="pincode" name="pincode"><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address"class="add" name="address"></textarea><br>
+
+      <label for="state">State:</label>
+      <input type="text" class="state" id="state" name="state"><br>
+
+      <label for="country">Country:</label>
+      <input type="text"class="cn" id="country" name="country"><br>
+
+      <label for="food">Food:</label>
+      <input type="text"class="fd" id="food" name="food"><br>
+
+      <button type="button"class="bn" onclick="appendRow()">Submit</button>
+    </form>
+  </div>
+  <div class="container2">
+
+  </div>
+
+    <table id="dataTable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Pincode</th>
+        <th>Address</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Food</th>
+      </tr>
+    </table>
+ 
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
